@@ -2,6 +2,10 @@
 
 A full-stack file compression tool built around a Huffman coding engine written from scratch in C++, wrapped in a modern Flask web application.
 
+**Live Demo:** [https://file-compression-utility.onrender.com](https://file-compression-utility.onrender.com)
+
+> Note: the free Render tier spins down after periods of inactivity, so the first request after a while may take 30-60 seconds to wake up.
+
 ## Overview
 
 This project pairs a native C++ compression core with a browser-based interface, so files can be compressed and decompressed either from the command line or through a polished web UI. The C++ binary does all the actual encoding/decoding work; the Flask layer is a thin, secure wrapper around it (subprocess calls, no shell interpolation) that adds uploads, downloads, and a richer user experience on top.
