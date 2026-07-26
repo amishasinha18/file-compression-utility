@@ -1,0 +1,13 @@
+# Compiled binary (build with: g++ -O2 -std=c++17 -o huffman huffman.cpp)
+huffman
+
+# Runtime scratch space
+uploads/*
+!uploads/.gitkeep
+
+# Python
+__pycache__/
+*.pyc
+
+# OS/editor cruft
+.DS_Store
