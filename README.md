@@ -6,6 +6,16 @@ A full-stack file compression tool built around a Huffman coding engine written 
 
 This project pairs a native C++ compression core with a browser-based interface, so files can be compressed and decompressed either from the command line or through a polished web UI. The C++ binary does all the actual encoding/decoding work; the Flask layer is a thin, secure wrapper around it (subprocess calls, no shell interpolation) that adds uploads, downloads, and a richer user experience on top.
 
+## Screenshots
+
+| Compress (light theme) | Result + before/after preview |
+|---|---|
+| ![Compress view](screenshots/compress-light.png) | ![Result preview](screenshots/result-preview.png) |
+
+| Dark theme + batch upload | Session history & analytics drawer |
+|---|---|
+| ![Dark theme batch](screenshots/batch-dark.png) | ![History drawer](screenshots/history-drawer.png) |
+
 ## Features
 
 - **C++ Huffman coding engine** — builds a frequency-based Huffman tree and encodes/decodes files at the bit level, exposed as a small standalone CLI binary.
@@ -74,20 +84,6 @@ The compiled binary also works standalone:
 ./huffman c <input_file> <output_file>   # compress
 ./huffman d <input_file> <output_file>   # decompress
 ```
-
-## Screenshots
-
-> Add UI screenshots here to showcase the app — suggested shots below.
-
-| Compress (light theme) | Result + before/after preview |
-|---|---|
-| ![Compress view](screenshots/compress-light.png) | ![Result preview](screenshots/result-preview.png) |
-
-| Dark theme + batch upload | Session history & analytics drawer |
-|---|---|
-| ![Dark theme batch](screenshots/batch-dark.png) | ![History drawer](screenshots/history-drawer.png) |
-
-To add your own: drop image files into a `screenshots/` folder at the repo root using the filenames above (or update the paths to match your own).
 
 ## Notes
 
